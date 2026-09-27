@@ -2103,6 +2103,20 @@ h1, h2, h3, h4, h5 {
     border-radius: var(--radius-full);
   }
 
+  /* Penyesuaian khusus tombol Hubungi Admin / WhatsApp & Kemitraan agar teks tidak keluar */
+  .closing-section .btn,
+  .closing-buttons a,
+  .closing-buttons button,
+  .hero-cta-group .btn,
+  [class*="whatsapp"], 
+  [class*="kemitraan"],
+  .btn-whatsapp,
+  .btn-kemitraan {
+    font-size: 0.75rem !important; /* Memperkecil ukuran teks tombol di HP */
+    padding: 12px 10px !important;  /* Menyesuaikan padding tombol */
+    letter-spacing: -0.2px;         /* Merapatkan sedikit jarak antar huruf jika perlu */
+  }
+
   .hero-cta-group {
     flex-direction: column;
     width: 100%;
@@ -2157,3 +2171,4 @@ h1, h2, h3, h4, h5 {
     display: none;
   }
 }
+ 
